@@ -8,5 +8,16 @@
       "source": "/home/:path*",
       "destination": "http://cedeppe-home.lovable.app/:path*"
     }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "x-forwarded-host",
+          "value": "cedeppebrasil.com"
+        }
+      ]
+    }
   ]
 }
