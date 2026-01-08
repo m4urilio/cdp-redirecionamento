@@ -1,12 +1,16 @@
 {
   "rewrites": [
     {
-      "source": "/home",
-      "destination": "http://cedeppe-home.lovable.app/home"
+      "source": "/",
+      "destination": "http://cedeppe-home.lovable.app"
     },
     {
-      "source": "/home/:path*",
-      "destination": "http://cedeppe-home.lovable.app/home/:path*"
+      "source": "/home",
+      "destination": "http://cedeppe-home.lovable.app"
+    },
+    {
+      "source": "/:path*",
+      "destination": "http://cedeppe-home.lovable.app/:path*"
     }
   ]
 }
